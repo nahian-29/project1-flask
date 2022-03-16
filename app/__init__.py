@@ -8,20 +8,20 @@ def create_app():
     app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 
     @app.route("/")
-    @app.route("/index.html")
+    @app.route("/base.html")
     def index():
-        return render_template('index.html')
-    @app.route("/gitPage.html")
+        return render_template('base.html')
+    @app.route("/git.html")
     def gitPage():
-        return render_template('gitPage.html')
-    @app.route("/dockerPage.html")
+        return render_template('git.html')
+    @app.route("/docker.html")
     def dockerPage():
-        return render_template('dockerPage.html')
-    @app.route("/pythonPage.html")
+        return render_template('docker.html')
+    @app.route("/python.html")
     def pythonPage():
-        return render_template('pythonPage.html')
-    @app.route("/cicdPage.html")
+        return render_template('python.html')
+    @app.route("/cicd.html")
     def cicdPage():
-        return render_template('cicdPage.html')
+        return render_template('cicd.html')
 
     return app
