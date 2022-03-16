@@ -1,0 +1,23 @@
+name: Run Tests, Build Dockerfile, Run on Heroku
+
+on:
+  push:
+    branches:
+      - 'live'
+    tags:
+      - 'v*'
+  pull_request:
+    branches:
+      - 'live'
+#This is sent to the live version of the project
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "dockerflask" #Must be unique in Heroku and linked to my own
+          heroku_email: "na523@njit.edu"
+          usedocker: true

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+	<meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kirwin - IS218</title>
+    <!--Link for Main CSS -->
+    <link href= "../static/css/main.css" rel = "stylesheet">
+	<!-- BSv5 -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+		rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+		crossorigin="anonymous">
+	<!-- JS for BSv5 in case we need to use in the future -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+
+	</script>
+	<!-- Link for Slideshow -->
+	<link href = "../static/css/slideshow.css" rel = "stylesheet">
+</head>
+<nav class = "navbar navbar-expand-sm navbar-dark">
+	<a class = "navbar-brand" href = "#">Home</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+       </button>
+	<div class = "collapse navbar-collapse" id = "collapsibleNavbar">
+        <ul class = "navbar-nav ms-auto">
+		    <li class = "nav-item"><a class = "nav-link" href = "gitPage.html">Git</a></li>
+		    <li class = "nav-item"><a class = "nav-link" href = "dockerPage.html">Docker</a></li>
+		    <li class = "nav-item"><a class = "nav-link" href = "pythonPage.html">Python/Flask</a></li>
+		    <li class = "nav-item"><a class = "nav-link" href = "cicdPage.html">CI/CD</a></li>
+	    </ul>
+    </div>
+</nav>
+<div class = "container-sm" style = "padding-top: 5rem;">
+	<!-- Image Slideshow -->
+	<div class = "slideshow-container">
+		<!--Images-->
+		<div class = "mySlides">
+			<div class = "numbertext">1/4</div>
+			<img src = "../static/images/Git.png" style = "width: 500px;" alt = "Git Icon">
+			<div class = "text">Git</div>
+		</div>
+		<div class = "mySlides">
+			<div class = "numbertext">2/4</div>
+			<img src = "../static/images/Docker.png" style = "width: 100%;" alt = "Docker Icon">
+			<div class = "text">Docker</div>
+		</div>
+		<div class = "mySlides">
+			<div class = "numbertext">3/4</div>
+			<img src = "../static/images/Python.jpeg" style ="width: 100%" alt="Python Icon">
+			<div class = "text">Python/Flask</div>
+		</div>
+		<div class = "mySlides">
+			<div class = "numbertext">4/4</div>
+			<img src = "../static/images/CICD.png" style = "width: 100%" alt = "CI/CD Process Icon">
+			<div class = "text">CI/CD</div>
+		</div>
+		<!--Next and Previous Buttons-->
+		<a class = "prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class = "next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+    <!--Circles to indicate position-->
+	<div style = "text-align:center">
+		<span class = "dot" onclick = "currentSlide(1)"></span>
+		<span class = "dot" onclick = "currentSlide(2)"></span>
+		<span class = "dot" onclick = "currentSlide(3)"></span>
+		<span class = "dot" onclick = "currentSlide(4)"></span>
+	</div>
+	<!--Link for Script, has to go after the whole Slideshow html code-->
+	<script src = "../static/js/slideshow.js"></script>
+    <!--Bottom of the page-->
+    <div class = "row">
+        <div class = "col" style = "padding-top: 5rem;">
+            <p id = "BriefIntro">Talk abt the blah
+            </p>
+        </div>
+       <div class = "col" style = "padding-top: 10rem; padding-left: 10rem;">
+           <button onclick = "location.href = 'gitPage.html'" type="button">
+               Proceed to Git &#10095
+           </button>
+       </div>
+    </div>
+</div>

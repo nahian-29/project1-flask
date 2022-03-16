@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head>
+	<meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kirwin - IS218</title>
+    <!--Link for Main CSS -->
+    <link href= "../static/css/main.css" rel = "stylesheet">
+	<!-- BSv5 -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+		rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+		crossorigin="anonymous">
+	<!-- JS for BSv5 in case we need to use in the future -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</head>
+<nav class = "navbar navbar-expand-lg navbar-dark">
+	<a class = "navbar-brand" href = "#">Python - Flask</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+	<div class = "collapse navbar-collapse" id = "navbarNav">
+        <ul class = "navbar-nav ms-auto">
+            <li class = "nav-item"><a class = "nav-link" href = "index.html">Home</a></li>
+		    <li class = "nav-item"><a class = "nav-link" href = "gitPage.html">Git</a></li>
+		    <li class = "nav-item"><a class = "nav-link" href = "dockerPage.html">Docker</a></li>
+		    <li class = "nav-item"><a class = "nav-link" href = "cicdPage.html">CI/CD</a></li>
+	    </ul>
+    </div>
+</nav>
+
+<div class = "container-fluid">
+    <div class = "container-fluid">
+        <p id = "pythonIntro">
+            Explain about Python
+
+        </p>
+    </div>
+    <div class = "container-fluid">
+        <!--Explain Pytest, simple pages and testing it, link to GitHub, link to flask and Blueprint doc and explain the
+        file structure of this project-->
+        <p id = "pytest">TAlk about pytest
+        </p>
+        <p id = "simplePages">talk abt live branch, product gonna be released for public to see, dev is for developers, not to lose
+        original files</p>
+    </div>
+    <div class = "container-fluid">
+        <p id = "testExample">
+
+        </p><img src = "../static/images/pytest%20example.png" alt = "PyTest Example"><br><br>
+        <p id = "fileStructure">Talk abt file structure:</p>
+        <ul>
+            <li>.github: explain git hub
+                <ul>
+                    <li>workflows
+                        <ul>
+                            <li>dev.yml:  making some actions seem automatic. This is the development version.</li>
+                            <li>prod.yml: This is the same file as above but normally wouldn't include some tasks like tests. This is the file responsible for showing you this page now</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>app: this is the application files that are being used on the web application, some are being displayed, some are not.
+                <ul>
+                    <li>static: these are files that doesn't change between pages. It can contain things like CSS files, JS, or images.
+                        <ul>
+                            <li>css</li>
+                            <li>images</li>
+                            <li>js</li>
+                        </ul>
+                    </li>
+                    <li>templates: this contains html templates that are used to display the webpages for you, the user to see.
+                    <ul>
+                        <li>cicdPage.html: CI/CD Page (next and last page)</li>
+                        <li>dockerPage.html: Docker Page</li>
+                        <li>gitPage.html: Git Page</li>
+                        <li>index.html: Home Page</li>
+                        <li>pythonPage.html: This is the page you're seeing</li>
+                        <li>index-testing.html: This is the original page that I used to test Pytest, not used</li>
+                    </ul>
+                    <li>__init__.py: This is the initation file for the application, this will create the app instance which contains the route for each page and the location of that page</li>
+                    <li>run.py: This will start an instance of the initation file</li>
+                </ul>
+            </li>
+            <li>calculator: This is the calculator portion that we are testing for another project, can be used to test pytest as well. Not used here so I won't be explaining much more.</li>
+            <li>tests: This is what PyTest uses to check whatever you want to check
+                <ul>
+                    <li>__init__.py: This is empty but this is also the initation file for the test section</li>
+                    <li>calculator_test.py: A test to check the results for the calculator section of the application</li>
+                    <li>cicdPage_test.py: Test to check if the page has <b>CI/CD</b> as the result of the page</li>
+                    <li>conftest.py: This creates the app instance and test if its functional</li>
+                    <li>dockerpage_test.py: Test to check if the page has <b>Docker</b> as the result of the page</li>
+                    <li>gitPage_test.py: Test to check if the page has <b>Git</b> as the result of the page</li>
+                    <li>homepage_test.py: Test to check if the page has <b>Home</b> as the result of the page</li>
+                    <li>pythonPage_test.py: Test to check if the page has <b>Python</b> - Flask as the result of the page</li>
+                </ul>
+            </li>
+            <li>docker-compose.yml: This has the settings that the Dockerfile will use if accessed through a terminal</li>
+            <li>Dockerfile: This is the instructions for Docker to create a container for flask and this project</li>
+            <li>heroku.yml: Instructions for Heroku (the hosting site we are using for this project) and what to use to build</li>
+            <li>pytest.ini: This is the setting file for pytest, it has the directory for tests in case that you want to change the default</li>
+            <li>readme.md: This is simply a "How to" or "What is" file to this project</li>
+            <li>requirements.txt: This is for any pull requests and the libraries that the project will need to work properly</li>
+            <li>setup.py: This is a script to install the packages needed for the application mentioned</li>
+        </ul>
+        <p id = "extra">There are files like .gitignore and .dockerignore, these are files that for their respective services, will
+        ignore directories or files. You can modify the contents if you like but not really used in this project.</p>
+    </div>
+</div>
+    <div class = "container mx-auto">
+        <div class = "row justify-content-center justify-content-between">
+            <div class = "col">
+                <button onclick="location.href = 'dockerPage.html'" type = "button">
+                    &#10094 Return to Docker
+                </button>
+            </div>
+            <div class = "col">
+                <button onclick="location.href = 'cicdPage.html'" type = "button">
+                    Proceed to CI/CD &#10095
+                </button>
+            </div>
+        </div>
+    </div>
