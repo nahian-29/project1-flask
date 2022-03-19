@@ -45,3 +45,51 @@
             </nav>
         </header>
     </div>
+    <div class = "container">
+    <img src="../static/images/python image.png" height="300" width="400"/>
+</div>
+    <body>
+<p><b>Python:</b> Python is a popular general-purpose programming language that can be used for a wide variety of applications. It includes high-level data structures, dynamic typing, dynamic binding, and many more features that make it as useful for complex application development as it is for scripting or "glue code" that connects components together. It can also be extended to make system calls to almost all operating systems and to run code written in C or C++. Due to its ubiquity and ability to run on nearly every system architecture, Python is a universal language found in a variety of different applications.</p>
+    <p><b>Flask Python:</b> Flask is a web framework, it’s a Python module that allows users to develop web applications easily. It has a small and easy-to-extend core: it’s a microframework that does not include an ORM (Object Relational Manager) or such features.</p>
+    <div>
+    <p style="float: left;"><img src="../static/images/pytest.png" height="300" width="600" border="1px"></p>
+    </div>
+        <p><b>Pytest:</b> Pytest is a testing framework based on python. It is mainly used to write API test cases. This tutorial helps one understand-
+        <ul>
+        <li> &bull; installation of pytest</li>
+        <li> &bull; various concepts and features of pytest </li>
+        <li> &bull; sample programs </li>
+    </ul>
+    </p>
+        <p><b> Current Project File Structure:</b> The file contains <i>.github, workflows, app, templates, calculator, tests, .dockerignore, workflows, readme.md, heroku.yml</i> and so on. Each folder contains sub folders with designated storage of codes that carry out a specific function.
+<p><b>.github</b> This folder explains the functionalities of github. It contains a subfolder called workflows. Workflows is where two different working directory is placed. Workflows contains <i> dev.yml</i> and <i>prod.yml</i> </p>
+<p>
+<ul>
+    <li>dev.yml- a file that is the developmental version maintaining automated actions.</li>
+    <li>prod.yml- this file is responsible for showing the current page and normally does not include testing operations.</li>
+</ul> </p>
+    <p><b>app:</b> The app folder contains folders called simple pages and static. This is the storehouse for the applications being used on the website development
+    <ul>
+    <li>Simple pages- contains __init__.py which creates the app instances and the route for each page and its location. </li>
+    <li>Static- contains <i>css, images, js</i> folders that holds the files for the slideshows, designs, images, styles, and scripts incorporated on the webpage. </li>
+</ul>
+    </p>
+    <p><b>templates-</b> contains the html folders for home page and content pages. The templates contain base.html, docker.html, git.html, python.html,and cicd.html. The mentioned html files are what the website is based upon. The styles, images, and slideshows on these html pages are somewhat dependent on the app folders </p>
+    <p><b>tests:</b> this is where pytest checks whether or not the directed folder exists and tests the input. This folder contains the following:
+    <ul>
+    <li>__init__.py- initiation page </li>
+    <li>calculator_test.py- for calculator tests</li>
+    <li>docker_test.py- docker page content tests</li>
+    <li>git_test.py- git page content tests</li>
+    <li>pythontest.py- python page content tests</li>
+    <li>home_test.py- home page content tests</li>
+    <li>cicd_test.py- CI/CD page content tests</li>
+    <li>conftest.py- application instantiation</li>
+</ul>
+    </p>
+<p><b>.dockerignore:</b> contains list of files or directories which is to be ignored while building an image</p>
+    <p><b>docker-compose.yml:</b> it maintains folders that the Dockerfile will use if accessed through a terminal</p>
+    <p><b>Dockerfile:</b> directions for Docker to create a container for the flask </p>
+    <p><b>heroku.yml:</b> managing the hosting site "Heroku" on building the app or website </p>
+    <p><b>readme.md:</b> contains information on the files in a directory</p>
+    </body>
