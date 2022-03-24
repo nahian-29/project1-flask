@@ -34,7 +34,7 @@ def test_calculator_add_method():
     """Testing the Calculator"""
     calculator = Calculator()
     # this is show using the calculator object add method
-    assert calculator.add(1, 9) == 2 # should be 1 here, not 9
+    assert calculator.add(1, 1) == 2 # should be 1 here, not 9
 
 
 def test_calculator_subtract_method():
