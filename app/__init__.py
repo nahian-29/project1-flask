@@ -23,5 +23,8 @@ def create_app():
     @app.route("/cicd.html")
     def cicdPage():
         return render_template('cicd.html')
+    @app.route("/glossary.html")
+    def cicdPage():
+        return render_template('glossary.html')
 
     return app
