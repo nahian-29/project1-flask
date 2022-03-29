@@ -26,5 +26,8 @@ def create_app():
     @app.route("/glossary.html")
     def glossaryPage():
         return render_template('glossary.html')
+    @app.route("/aaatesting.html")
+    def AAATestingPage():
+        return render_template('aaatesting.html')
 
     return app
