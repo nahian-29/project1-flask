@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!--img src="../../static/images/home page image/home page image.png" alt="carousel" height="400" width="400"/>-->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="../static/css/slideshow.css" rel="stylesheet">
+    <link href = "../static/css/python.css" rel = "stylesheet">
+    <script src = "../static/js/slideshow.js"></script>
+        <title>Project 2</title>
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <header class="mb-5">
+            <!-- As a link -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#">SOLID</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li>
+                                <a class="nav-link" href="base.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="git.html">GIT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="docker.html">Docker</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cicd.html">CI/CD Process</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="python.html">Python/Flask</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="glossary.html">Glossary</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="aaatesting.html">AAA Testing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="oops.html">OOPs</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class = "container">
+        <img src="../static/images/SOLID.png" height="300" width="400"/>
+    </div>
+    <body>
+    <p><b><i>S</i>= Single Responsibility Principle:</b> Every class is responsible for exactly one thing. That means it has only one reason to change. If you change anything in that class, it will effect only one particular behavior of the software. That makes the code more robust because there will be less side effects. If a class had two responsibilities and thr programmer changed anything, the risk would be high that the programmer could also break the logic for the second behavior.<br><i>"A class should have one, and only one, reason to change."</i></br></p>
+    <p><b><i>O</i>= Open-Closed Principle:</b> The classes you use should be open for extension but closed for modification. This can be achieved with inheritance. You don’t have to touch the class you want to extend if you create a subclass of it. The original class is closed for modification but you can add custom code to your subclass to add new behavior.
+        Inheritance may be the most popular way to implement the Open-Closed Principle but it is not the only one. Objective-C, for example, offers categories which can be used to add methods to a class, without touching the original class and without subclassing it. <br><i>"You should be able to extend a classes behavior, without modifying it."</i></br></p>
+    <p><b><i>L</i>= Liskov Substitution Principle:</b> Assume we have a class B which is a subclass of A. If the program works with an object a of class A one can replace it with an object b of class B without changing the behavior of the program.
+        The implementation of this principle can be a little bit tricky if one combines it with the Open-Closed Principle even if the behavior is extended of the class in a subclass, one must make sure that it still exchanges the base class with the derived class without breaking anything.<br><i>"Derived classes must be substitutable for their base classes."</i></br></p>
+    <p><b><i>I</i>= Interface Segregation Principle:</b> Classes should be as specialized as possible. You do not want any god classes that contain the whole application logic. The source code should be modular and every class should contain only the minimum necessary logic to achieve the desired behavior. The same goes for interfaces. Make small and specific interfaces so the client who implements them does not depend on methods it does not need. Instead of one class that can handle three special cases it is better to have three classes, one for each special case.<br><i>"Make fine grained interfaces that are client specific."</i></br></p>
+    <p><b><i>D</i>= Dependency Inversion Principle:</b> Classes should not depend on concrete details of other classes. Even classes from a high domain level should not handle the specific details of components from a lower level. Both low and high level classes should depend on the same abstractions. To create specific behavior one can use techniques like inheritance or interfaces.<br><i>"Depend on abstractions, not on concretions."</i></br></p>
+    </body>
