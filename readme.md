@@ -1,13 +1,13 @@
-# Project 1 : Website Made from Flask and Deployed to Heroku
-Live Production Badge : [![Run Tests, Build Dockerfile, Run on Heroku](https://github.com/nahian-29/project1-flask/actions/workflows/prod.yml/badge.svg?branch=live)](https://github.com/nahian-29/project1-flask/actions/workflows/prod.yml)
+# Project 2 : Website Made from Flask and Deployed to Heroku
+Improved_calc Production Badge : [![Production Workflow](https://github.com/nahian-29/project1-flask/actions/workflows/dev.yml/badge.svg?branch=improved_calc)](https://github.com/nahian-29/project1-flask/actions/workflows/dev.yml)
 
 Dev Production Badge : [![Production Workflow](https://github.com/nahian-29/project1-flask/actions/workflows/dev.yml/badge.svg?branch=dev)](https://github.com/nahian-29/project1-flask/actions/workflows/dev.yml)
 
-Live: https://dockerlive.herokuapp.com
+Improved-calc: https://improved-calc.herokuapp.com/
 
 Dev: https://dockerflask-dev.herokuapp.com
 ***
-The webpages explain what Git, Docker, Python/Flask and CI/CD means and instructions within them 
+The webpages explain what Git, Docker, Python/Flask, CI/CD, Glossary, OOPs, AAA Testing, SOLID means and instructions within them 
 to use this application yourself.
 
 If accessed through a terminal application, use pytest to test all the webpages included in 
