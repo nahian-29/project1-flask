@@ -29,5 +29,11 @@ def create_app():
     @app.route("/aaatesting.html")
     def AAATestingPage():
         return render_template('aaatesting.html')
+    @app.route("/oops.html")
+    def OOPsPage():
+        return render_template('oops.html')
+    @app.route("/solid.html")
+    def SOLIDPage():
+        return render_template('solid.html')
 
     return app
